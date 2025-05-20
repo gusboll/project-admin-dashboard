@@ -1,0 +1,163 @@
+@font-face{
+    font-family: 'roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+body{
+    font-family: 'roboto', 'Times New Roman', Times, serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    resize: both;
+}
+
+.sidebar{
+    display: grid;
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: royalblue;
+    color: white;
+    grid-template-rows: 100px 2fr 1fr 3fr;
+    justify-content: center;
+    padding-right: 25px;
+}
+
+.dashboard{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 1;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.dashboard h1{
+    font-size: 30px;
+}
+
+.user-icons-buttons{
+    display: grid;
+    grid-area: 2 / 1 / 3 / 1;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.user-icons, .user-buttons, .config-icons, .config-buttons{
+    display: grid;
+    row-gap: 15px;
+}
+
+.configs{
+    display: grid;
+    grid-area: 3 / 1 / 4 / 1;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.header{
+    display: grid;
+    grid-area: 1 / 2 / 1 / 6;
+    background-color: white;
+    grid-template-columns: 1fr 5fr 3fr;
+    height: 209px;
+    grid-template-rows: 89px 120px;
+}
+
+.header-top{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 4;
+    border: 1px solid red;
+}
+
+.search-icon, .alarm-icon, .header-top .user-icon{
+    display: grid;
+    justify-content: center;
+}
+
+.header-top input{
+    width: 500px;
+    height: 20px;
+    margin-right: 50px;
+    border-radius: 15px;
+    background-color: lightblue;
+    border: 0px;
+}
+
+.header-bot{
+    display: grid;
+    grid-area: 2 / 1 / 2 / 4;
+    grid-auto-flow: column;
+    border: 1px solid red;
+    grid-template-columns: 118.92px 589.58px 112.27px 102.31px 142.13px;
+}
+
+.header-bot1{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-column: 1 / 3;
+    padding-right: 250px;
+}
+
+.header-bot1 .user-icon{
+    display: grid;
+    justify-content: center;
+}
+
+.header-bot h2{
+    margin: 10px 0px 0px 0px;
+    font-size: larger;
+}
+
+.header-bot2{
+    display: grid;
+    grid-column: 3 / 6;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bot2 button{
+    background:royalblue;
+    color: white;
+    font-weight:900;
+    border-radius: 50px;
+    border: 0px;
+    padding: 10px 20px 10px 20px;
+}
+
+.header-bot2 ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.main-content{
+    display: grid;
+    grid-area: 2 / 2 / 6 / 6;
+    background-color: rgb(148, 205, 240);
+}
+
+ul{
+    list-style: none;
+}
+
+.your-projects{
+    display: grid;
+    grid-area: 1 / 2 / 4 / 5;
+
+}
+
+.announcements{
+    display: grid;
+    grid-area: 1 / 5 / 2 / 5;
+}
+
+.trending{
+    display: grid;
+    grid-area: 2 / 5 / 3 / 5;
+}
