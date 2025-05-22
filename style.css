@@ -3,14 +3,20 @@
     src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 }
 
+
 body{
     font-family: 'roboto', 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 209px);
     resize: both;
 }
 
@@ -67,97 +73,167 @@ body{
 }
 
 .header-top{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     align-items: center;
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 1 / 4;
     border: 1px solid red;
-}
-
-.search-icon, .alarm-icon, .header-top .user-icon{
-    display: grid;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-top input{
-    width: 500px;
+    width: 50%;
     height: 20px;
-    margin-right: 50px;
     border-radius: 15px;
     background-color: lightblue;
     border: 0px;
+}
+
+.header-top .search-icon{
+    padding: 0px 0px 0px 50px;
+}
+
+.alarm-icon{
+    margin-left: 80px;
+}
+
+.header-top p{
+    padding: 0px 50px 0px 0px;
 }
 
 .header-bot{
     display: grid;
     grid-area: 2 / 1 / 2 / 4;
     grid-auto-flow: column;
+    justify-content: space-between;
     border: 1px solid red;
-    grid-template-columns: 118.92px 589.58px 112.27px 102.31px 142.13px;
+    
 }
 
 .header-bot1{
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    grid-column: 1 / 3;
-    padding-right: 250px;
+    display: flex;
+    flex-direction: row;
 }
 
 .header-bot1 .user-icon{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px 50px 50px;
 }
 
-.header-bot h2{
-    margin: 10px 0px 0px 0px;
-    font-size: larger;
+.user-greeting{
+    display: grid;
+}
+
+.user-greeting h5{
+    margin: 0px 0px 10px 0px;
+    align-self: flex-end;
+}
+
+.user-greeting h2{
+    margin: 0px;
 }
 
 .header-bot2{
-    display: grid;
-    grid-column: 3 / 6;
-    justify-content: center;
+    display: flex;
     align-items: center;
-}
-
-.header-bot2 button{
-    background:royalblue;
-    color: white;
-    font-weight:900;
-    border-radius: 50px;
-    border: 0px;
-    padding: 10px 20px 10px 20px;
 }
 
 .header-bot2 ul{
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 30px 0px 30px;
 }
+
+.header-bot2 button{
+    background:royalblue;
+    color: white;
+    font-weight: 900;
+    border-radius: 50px;
+    border: 0px;
+    padding: 10px 20px 10px 20px;
+    width: 130px;
+}
+
 
 .main-content{
     display: grid;
     grid-area: 2 / 2 / 6 / 6;
-    background-color: rgb(148, 205, 240);
-}
-
-ul{
-    list-style: none;
+    background-color: rgb(183, 215, 236);
+    grid-template: 1fr repeat(3, 3fr) 1fr/ 5fr 1fr;
+    padding: 30px;
+    column-gap: 30px;
 }
 
 .your-projects{
     display: grid;
-    grid-area: 1 / 2 / 4 / 5;
+    grid-area: 1 / 1 / 4 / 1;
+}
 
+.your-projects h2{
+    margin: 0px;
+    height: 50px;
+}
+
+.projects{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 15px;
+}
+
+.projects div{
+    border-left: 5px solid orange;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    height: auto;
+}
+
+.main-content-icons{
+    display: flex;
+    justify-content: end;
+}
+
+.main-content-icons div{
+    border-left: 0px;
+    padding: 0px 15px 0px 15px;
 }
 
 .announcements{
     display: grid;
-    grid-area: 1 / 5 / 2 / 5;
+    grid-area: 1 / 2 / 4 / 2;
+}
+
+.announcements h2{
+    margin: 0px;
+    height: 50px;
+}
+
+.announcements-container{
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 15px 0px 15px;
+    grid
+}
+
+.announcements-container h4{
+    margin: 0px;
+}
+
+.announcements-container p{
+    margin: 16px 0px 16px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
 }
 
 .trending{
     display: grid;
-    grid-area: 2 / 5 / 3 / 5;
+    grid-area: 4 / 2 / 4 / 2;
+}
+
+.trending h2{
+    margin: 0px;
+    height: 50px;
 }
