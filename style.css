@@ -50,6 +50,14 @@ ul{
     grid-template-columns: auto 1fr;
 }
 
+.user-buttons div{
+    height: 24px;
+}
+
+.config-buttons div{
+    height: 24px;
+}
+
 .user-icons, .user-buttons, .config-icons, .config-buttons{
     display: grid;
     row-gap: 15px;
@@ -76,12 +84,11 @@ ul{
     display: flex;
     align-items: center;
     grid-area: 1 / 1 / 1 / 4;
-    border: 1px solid red;
     justify-content: space-between;
 }
 
 .header-top input{
-    width: 50%;
+    width: 60%;
     height: 20px;
     border-radius: 15px;
     background-color: lightblue;
@@ -105,7 +112,6 @@ ul{
     grid-area: 2 / 1 / 2 / 4;
     grid-auto-flow: column;
     justify-content: space-between;
-    border: 1px solid red;
     
 }
 
@@ -161,7 +167,7 @@ ul{
     display: grid;
     grid-area: 2 / 2 / 6 / 6;
     background-color: rgb(183, 215, 236);
-    grid-template: 1fr repeat(3, 3fr) 1fr/ 5fr 1fr;
+    grid-template: 1fr repeat(3, 3fr) 1fr/ 5fr 2fr ;
     padding: 30px;
     column-gap: 30px;
 }
@@ -202,7 +208,7 @@ ul{
 
 .announcements{
     display: grid;
-    grid-area: 1 / 2 / 4 / 2;
+    grid-area: 0 / 2 / 4 / 3;
 }
 
 .announcements h2{
@@ -214,8 +220,8 @@ ul{
     display: grid;
     background-color: white;
     border-radius: 20px;
-    padding: 15px 15px 0px 15px;
-    grid
+    padding: 15px 15px 15px 15px;
+    
 }
 
 .announcements-container h4{
@@ -223,17 +229,146 @@ ul{
 }
 
 .announcements-container p{
-    margin: 16px 0px 16px 0px;
+    margin: 0px 0px 15px 0px;
     padding-bottom: 5px;
     border-bottom: 1px solid grey;
 }
 
 .trending{
     display: grid;
-    grid-area: 4 / 2 / 4 / 2;
+    grid-area: 2 / 2 / 4 / 3;
+    margin-top: 30px;
+    grid-template: repeat(4, 1fr) / 1fr 1r;
 }
 
 .trending h2{
     margin: 0px;
     height: 50px;
+}
+
+.trending p{
+    margin: 0px;
+}
+
+.trending-container{
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    height: 229px;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+}
+
+.trending-icons, .trending-users{
+    display: grid;
+    grid-row: 1 / span 4;
+    justify-content: center;
+}
+
+
+
+.search-icon,
+.alarm-icon,
+.user-icon,
+.iconfav,
+.iconeye,
+.iconshare,
+.home-icon,
+.card-icon,
+.message-icon,
+.clock-icon,
+.files-icon,
+.community-icon,
+.cog-icon,
+.question-icon,
+.shield-icon,
+.first-icon,
+.third-icon,
+.fourth-icon,
+.logo {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.search-icon {
+  background-image: url('./svg-icons/magnify.svg');
+}
+
+.alarm-icon {
+  background-image: url('./svg-icons/bell-ring.svg');
+}
+
+.user-icon {
+  background-image: url('./svg-icons/cat.svg');
+}
+
+.iconfav{
+    background-image: url('./svg-icons/star-plus-outline.svg');
+}
+
+.iconeye{
+    background-image: url('./svg-icons/eye-plus-outline.svg');
+}
+
+.iconshare{
+    background-image: url('./svg-icons/share-variant-outline.svg');
+}
+
+.home-icon{
+    background-image: url('./svg-icons/home.svg');
+}
+
+.card-icon{
+    background-image: url('./svg-icons/card-account-details-outline.svg');
+}
+
+.message-icon{
+    background-image: url('./svg-icons/message-reply.svg');
+}
+
+.clock-icon{
+    background-image: url('./svg-icons/clock-time-three.svg');
+}
+
+.files-icon{
+    background-image: url('./svg-icons/file-multiple.svg');
+}
+
+.community-icon{
+    background-image: url('./svg-icons/account-group.svg');
+}
+
+.cog-icon{
+    background-image: url('./svg-icons/cog.svg');
+}
+
+.question-icon{
+    background-image: url('./svg-icons/help-box.svg');
+}
+
+.shield-icon{
+    background-image: url('./svg-icons/shield-check.svg');
+}
+
+.first-icon{
+    background-image: url('./svg-icons/dog.svg');
+}
+
+.third-icon{
+    background-image: url('./svg-icons/spider.svg');
+}
+
+.fourth-icon{
+    background-image: url('./svg-icons/penguin.svg');
+}
+
+.logo{
+    background-image: url('./svg-icons/view-dashboard.svg');
 }
